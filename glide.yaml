@@ -1,0 +1,26 @@
+package: github.com/cybermiles/travis-rpc
+import:
+- package: github.com/cosmos/cosmos-sdk
+  version: develop
+- package: github.com/tendermint/tendermint
+  version: v0.15.0
+  subpackages:
+  - config
+  - node
+  - proxy
+  - rpc/client
+  - rpc/core/types
+  - rpc/lib/client
+  - rpc/lib/types
+  - types
+- package: github.com/tendermint/tmlibs
+  version: master
+  subpackages:
+  - cli
+  - cli/flags
+  - common
+  - events
+  - log
+  - logger
+- package: github.com/gorilla/mux
+  version: ^1.5.0

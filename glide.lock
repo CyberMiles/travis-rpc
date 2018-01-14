@@ -1,0 +1,185 @@
+hash: 1be9f3ec1ef8a5ebb71f38dd77e4e28f2ddaead92e249c2c00987cf6e84bf648
+updated: 2018-01-14T18:59:03.310958+08:00
+imports:
+- name: github.com/btcsuite/btcd
+  version: 2e60448ffcc6bf78332d1fe590260095f554dd78
+  subpackages:
+  - btcec
+- name: github.com/cosmos/cosmos-sdk
+  version: c30b49e4e84530cba3ab28fca1d4f33ddd167766
+  subpackages:
+  - app
+  - errors
+  - genesis
+  - modules/auth
+  - modules/base
+  - modules/coin
+  - modules/fee
+  - modules/ibc
+  - modules/nonce
+  - modules/roles
+  - stack
+  - state
+- name: github.com/go-kit/kit
+  version: 953e747656a7bbb5e1f998608b460458958b70cc
+  subpackages:
+  - log
+  - log/level
+  - log/term
+- name: github.com/go-logfmt/logfmt
+  version: 390ab7935ee28ec6b286364bba9b4dd6410cb3d5
+- name: github.com/go-playground/locales
+  version: e4cbcb5d0652150d40ad0646651076b6bd2be4f6
+  subpackages:
+  - currency
+- name: github.com/go-playground/universal-translator
+  version: 71201497bace774495daed26a3874fd339e0b538
+- name: github.com/go-stack/stack
+  version: 259ab82a6cad3992b4e21ff5cac294ccb06474bc
+- name: github.com/gogo/protobuf
+  version: 342cbe0a04158f6dcb03ca0079991a51a4248c02
+  subpackages:
+  - gogoproto
+  - jsonpb
+  - proto
+  - protoc-gen-gogo/descriptor
+  - sortkeys
+  - types
+- name: github.com/golang/protobuf
+  version: 1e59b77b52bf8e4b449a57e6f79f21226d571845
+  subpackages:
+  - proto
+  - ptypes
+  - ptypes/any
+  - ptypes/duration
+  - ptypes/timestamp
+- name: github.com/golang/snappy
+  version: 553a641470496b2327abcac10b36396bd98e45c9
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: 7f08801859139f86dfafd1c296e2cba9a80d292e
+- name: github.com/howeyc/crc16
+  version: 2b2a61e366a66d3efb279e46176e7291001e0354
+- name: github.com/jimlawless/whereami
+  version: aebf70d4a772ea20216cfe6c428f439cb47cfaf2
+- name: github.com/jmhodges/levigo
+  version: c42d9e0ca023e2198120196f842701bb4c55d7b9
+- name: github.com/kr/logfmt
+  version: b84e30acd515aadc4b783ad4ff83aff3299bdfe0
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/syndtr/goleveldb
+  version: 34011bf325bce385408353a30b101fe5e923eb6e
+  subpackages:
+  - leveldb
+  - leveldb/cache
+  - leveldb/comparer
+  - leveldb/errors
+  - leveldb/filter
+  - leveldb/iterator
+  - leveldb/journal
+  - leveldb/memdb
+  - leveldb/opt
+  - leveldb/storage
+  - leveldb/table
+  - leveldb/util
+- name: github.com/tendermint/abci
+  version: 5d5ea6869b91cadb55dbc4211ad7b326f053a33e
+  subpackages:
+  - server
+  - types
+- name: github.com/tendermint/ed25519
+  version: d8387025d2b9d158cf4efb07e7ebf814bcce2057
+  subpackages:
+  - edwards25519
+  - extra25519
+- name: github.com/tendermint/go-crypto
+  version: dd20358a264c772b4a83e477b0cfce4c88a7001d
+  subpackages:
+  - keys
+  - keys/wordlist
+- name: github.com/tendermint/go-wire
+  version: b6fc872b42d41158a60307db4da051dd6f179415
+  subpackages:
+  - data
+- name: github.com/tendermint/iavl
+  version: 594cc0c062a7174475f0ab654384038d77067917
+- name: github.com/tendermint/tendermint
+  version: 381fe19335ba8825e04d1d0fefa5cac709bb7178
+  subpackages:
+  - config
+  - lite
+  - lite/errors
+  - node
+  - proxy
+  - rpc/client
+  - rpc/core/types
+  - rpc/lib/client
+  - rpc/lib/types
+  - types
+- name: github.com/tendermint/tmlibs
+  version: 91b4b534ad78e442192c8175db92a06a51064064
+  subpackages:
+  - cli
+  - cli/flags
+  - common
+  - db
+  - events
+  - log
+  - logger
+  - merkle
+  - pubsub
+  - pubsub/query
+- name: golang.org/x/crypto
+  version: 95a4943f35d008beabde8c11e5075a1b714e6419
+  subpackages:
+  - nacl/secretbox
+  - openpgp/armor
+  - openpgp/errors
+  - poly1305
+  - ripemd160
+  - salsa20/salsa
+- name: golang.org/x/net
+  version: d866cfc389cec985d6fda2859936a575a55a3ab6
+  subpackages:
+  - context
+  - http2
+  - http2/hpack
+  - idna
+  - internal/timeseries
+  - lex/httplex
+  - trace
+- name: golang.org/x/text
+  version: e19ae1496984b1c655b8044a65c0300a3c878dd3
+  subpackages:
+  - secure/bidirule
+  - transform
+  - unicode/bidi
+  - unicode/norm
+- name: google.golang.org/genproto
+  version: a8101f21cf983e773d0c1133ebc5424792003214
+  subpackages:
+  - googleapis/rpc/status
+- name: google.golang.org/grpc
+  version: 401e0e00e4bb830a10496d64cd95e068c5bf50de
+  subpackages:
+  - balancer
+  - codes
+  - connectivity
+  - credentials
+  - grpclb/grpc_lb_v1/messages
+  - grpclog
+  - internal
+  - keepalive
+  - metadata
+  - naming
+  - peer
+  - resolver
+  - stats
+  - status
+  - tap
+  - transport
+- name: gopkg.in/go-playground/validator.v9
+  version: b1f51f36f1c98cc97f777d6fc9d4b05eaa0cabb5
+testImports: []
