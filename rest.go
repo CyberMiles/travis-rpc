@@ -101,6 +101,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/check_tx", checkTx)
 	r.HandleFunc("/deliver_tx", deliverTx)
+	r.HandleFunc("/commit", commit)
 	r.HandleFunc("/query", query)
 	// http.Handle("/", r)
 	http.ListenAndServe(":8088", r)
@@ -199,6 +200,19 @@ func query(w http.ResponseWriter, r *http.Request) {
 	fmt.Printf("Response Key: %v\n", resp.Key)
 	fmt.Printf("Response Proof: %v\n", resp.Proof)
 	fmt.Printf("Response Value: %v\n", resp.Value)
+
+	common.WriteSuccess(w, out)
+}
+
+func commit(w http.ResponseWriter, r *http.Request) {
+	commit := store.Commit()
+	out, err := proto.Marshal(&commit)
+	if err != nil {
+		http.Error(w, err.Error(), 500)
+		return
+	}
+	fmt.Printf("Commit Code: %v\n", commit.Code)
+	fmt.Printf("Commit Data: %v\n", commit.Data)
 
 	common.WriteSuccess(w, out)
 }

@@ -1,4 +1,4 @@
-package: github.com/cybermiles/travis-rpc
+package: github.com/CyberMiles/travis-rpc
 import:
 - package: github.com/cosmos/cosmos-sdk
   version: develop
